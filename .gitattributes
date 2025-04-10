@@ -1,0 +1,35 @@
+# Git attributes for Bernat's dotfiles repository
+
+# Encrypt SSH keys and configs
+.ssh/* filter=git-crypt diff=git-crypt
+
+# Encrypt AWS credentials
+.aws/credentials filter=git-crypt diff=git-crypt
+.aws/config filter=git-crypt diff=git-crypt
+
+# Encrypt any other sensitive files
+*.key filter=git-crypt diff=git-crypt
+*.pem filter=git-crypt diff=git-crypt
+*.secret filter=git-crypt diff=git-crypt
+secrets/* filter=git-crypt diff=git-crypt
+bash/* filter=git-crypt diff=git-crypt
+
+# Set text files to have normalized line endings in the repository
+*.txt text
+*.md text
+*.sh text eol=lf
+*.bash text eol=lf
+*.conf text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+
+# Declare binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.gz binary
+*.zip binary
+*.tar binary

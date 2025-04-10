@@ -1,0 +1,60 @@
+# Bernat's dotfiles .gitignore
+
+# Temporary files
+*~
+*.swp
+*.swo
+.*.sw?
+.DS_Store
+Thumbs.db
+
+# Package manager directories
+node_modules/
+vendor/
+.npm/
+
+# Build and compile artifacts
+*.o
+*.out
+*.class
+*.pyc
+__pycache__/
+*.so
+.build/
+build/
+dist/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+logs/
+log/
+
+# Editor and IDE files
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Local environment files (not encrypted)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep sensitive directories, but with empty files
+# Git-crypt will encrypt the real files
+
+# Specific dotfiles to ignore because they're machine-specific
+# (customize this as needed)
+.config/gtk-3.0/bookmarks
+
+# Ignore Git-crypt related backup files
+*.gpg~
